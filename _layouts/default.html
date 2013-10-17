@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<!-- http://getbootstrap.com/getting-started/#template -->
-<html>
+<html lang="en">
   <head>
-    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Columbia Data Science Society" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>{{ page.title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -15,11 +21,33 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">Project name</h3>
+      </div>
+
+      <div class="jumbotron">
+	      {{ page.content }}
+      </div>
+
+      <div class="footer">
+        <p>&copy; Columbia Data Science Society 2013</p>
+	<p>Uses <a href="http://getbootstrap.com/">Bootstrap</a></p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>
