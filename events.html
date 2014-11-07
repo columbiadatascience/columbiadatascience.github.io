@@ -10,6 +10,26 @@
       .logo {
         height: 65px;
       }
+
+      /* Responsive iFrame */
+ 
+      .responsive-iframe-container {
+          position: relative;
+          padding-bottom: 90%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden;
+      }
+       
+      .responsive-iframe-container iframe,   
+      .vresponsive-iframe-container object,  
+      .vresponsive-iframe-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
     </style>
   </head>
   <body>
@@ -63,6 +83,8 @@
 
     <div class="row">
       
+      
+
       <div class="large-8 medium-7 columns">
         <div class="panel radius">
           <h3 class="text-center"><strong>Upcoming Events</strong></h3>
@@ -83,22 +105,13 @@
       </div>
 
       <div class="large-4 medium-5 columns">
-        <h5 class="subheader">
-          If you are interested about getting updates about our events and getting involved please sign up for our mailing list.
+        <div class="responsive-iframe-container">
+          <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cskg610h0sk7nhhg57530c2qpc%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="400" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <h5 style="margin-top:15px" class="subheader">
+          If you have any event suggestions or want to host an event please <a href="mailto:cdss_executives@columbia.edu">send us an e-mail</a>.
         </h5>
-        <center>
-        <a href="#" class="alert button radius">Subscribe</a>
-        </center>
-        <img style="margin-bottom:10px" src="cdss_event_crop.jpg" />
-        <h5 class="subheader">
-          The Columbia Data Science Society (CDSS) is an interdisciplinary society that promotes data science across Columbia University and the New York City community. We believe that the key to data science is its interdisciplinary scope, so we strongly encourage students from all backgrounds to join us. 
-        </h5>
-        <h5 class="subheader">
-          To be notified about all future CDSS events and news please <a href="https://lists.columbia.edu/mailman/listinfo/cdss">join our mailing list</a>.
-          <!--
-          Our goal is to understand how to use and manage data to solve complex problems. The society has three core priorities: learning, networking, and practicing. To learn about data science, we host a variety of speaker series, panel discussions, and skills workshops. To network with data scientists, we arrange social events on campus and promote meet-ups around the city. To practice data science, we organize data science competitions, where members work in teams to test their problem-solving skills. Please join us on this new and exciting knowledge frontier!
-          -->
-        </h5>
+        
       </div>
     </div>
 
