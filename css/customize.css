@@ -1,0 +1,11 @@
+html {
+    overflow-y:scroll;
+}
+
+.logo {
+    height: 65px;
+}
+
+.snlogo {
+    height: 30px;
+}
