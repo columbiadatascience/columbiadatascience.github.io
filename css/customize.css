@@ -7,5 +7,12 @@ html {
 }
 
 .snlogo {
-    height: 30px;
+    height: 25px;
+    margin-top: -4px;
+    padding-left: -14px;
 }
+
+.snlogo-li {
+    margin-left: -10px;
+}
+
