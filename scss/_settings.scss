@@ -1265,11 +1265,11 @@ $alert-color: #dd9900;//#f04124;
 // 30. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-table-classes: $include-html-classes;
+$include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
-// $table-even-row-bg: $snow  ;
+// $table-even-row-bg: #eeeeee  ;
 
 // These control the table cell border style
 // $table-border-style: solid;
